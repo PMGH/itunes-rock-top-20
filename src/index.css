@@ -41,9 +41,18 @@ body {
   width: 100%;
 }
 
-.song-price {
-  margin-left: 20px;
-  margin-right: 20px;
+.song-price, .song-preview {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.song-preview {
+  filter: invert(10%);
+}
+
+.song-preview:hover {
+  filter: invert(0%);
+  transition: filter 1.1s;
 }
 
 a {
