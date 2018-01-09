@@ -10,6 +10,7 @@ class Song extends React.Component {
           <a href={song.id.label} target="_blank"><h5 className="song-title">{song.title.label}</h5></a>
           <h5 className="song-price">{song["im:price"].label}</h5>
         </div>
+        <audio controls src={song.link[1].attributes.href} type={song.link[1].attributes.type}></audio>
       </article>
     );
   }
