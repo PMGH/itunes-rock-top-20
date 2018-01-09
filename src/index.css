@@ -2,15 +2,36 @@ body {
   margin: 0 20px;
   padding: 0;
   font-family: sans-serif;
+  color: #5C5F61;
+}
+
+#app-heading {
+  color: #5C5F61;
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 .song-article {
+  border-top: 1px solid lightgrey;
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
 }
 
-.song-chart-position {
-  margin-right: 20px;
+.song-article:hover {
+  background-color: #2B303A;
+  color: #8B8E93;
+  transition: background-color 1.1s, color 1.1s;
+}
+
+.song-position {
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  font-size: 1.5em;
+  padding: 5px;
+  margin: 0 20px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
 
 .song-details {
@@ -18,4 +39,14 @@ body {
   flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
+}
+
+.song-price {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+a {
+  color: #008ABE;
+  text-decoration: none;
 }
